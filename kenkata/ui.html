@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Kenakata</title>
+	<meta name="keywords" content="keywords" />
+	<meta name="description" content="description" />
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#23425e">
+	<!--viewport-->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--modernizr-->
+	<script src="js/modernizr-custom.js"></script>
+	<!--styles-->
+	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.0" />
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header">
+		<div class="container">
+			<!--burger-->
+			<button class="burger"><i class="menu icon"></i>
+			</button>
+			<a class="header__logo" href="./">Kenakata</a>
+			<!--nav-->
+			<nav class="header-menu" id="menu">
+				<ul>
+					<li><a href="#">Colection</a>
+					</li>
+					<li><a href="#">Men</a>
+					</li>
+					<li><a href="#">Women</a>
+					</li>
+					<li><a href="#">Blog</a>
+					</li>
+					<li><a href="#">Faq</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="header-cart" href="#">
+				<svg class="icon icon-cart">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite/sprite.svg#cart">
+					</use>
+				</svg>
+				<span class="header-cart__number">3</span>
+			</a>
+		</div>
+	</header>
+	<main class="wrapper">
+		<div class="container" style="border: 1px solid black">
+			<h1>h1/ 80px / Lora</h1>
+			<h2>h2/ 35px / Droid Serif</h2>
+			<h3>h3/ 18px / Droid Serif</h3>
+			<h4>h4/ 12px / Droid Serif</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+			<h1 style="font-family:Muli">Muli</h1>
+			<h1 style="font-family:Droid-Serif">Droid-Serif</h1>
+			<h1 style="font-family:Lora">Lora</h1>
+		</div>
+		<div class="container" style="border:1px solid black; padding: 20px;">
+			<br>
+			<a class="btn btn_primary">Shop Now</a>
+			<button class="btn btn_primary">Add To Cart</button>
+			<a class="btn btn_secondary">Brows All Items</a>
+		</div>
+
+		<div class="container" style="border:1px solid black; padding: 20px;">
+			<form action="#" method="get">
+				<input class="form-input" type="email" required="required" placeholder="Your email address">
+				<button type="submit" class="btn btn_primary">Subscribe</button>
+			</form>
+		</div>
+		<div class="container" style="border:1px solid black; padding: 20px;">
+			<div class="catalog-item">
+				<div class="catalog-item-block">
+					<div class="catalog-item-image">
+						<img src="../../uploads/product-img-1.jpg">
+					</div>
+					<div class="catalog-item-back">
+						<button class="btn btn_primary">Add To Cart</button>
+						<button class="btn btn_primary">Quik View</button>
+					</div>
+				</div>
+				<h2 class="catalog-item__title">Cotton Polo Shirt</h2>
+				<div class="catalog-item-prices">
+					<div class="catalog-item-prices-old">
+						$100.00
+					</div>
+					<div class="catalog-item-prices-new">
+						$95.00
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container-footer">
+			<ul class="footer-nav">
+				<li><a href="#">Your account</a>
+				</li>
+				<li><a href="#">Contact us</a>
+				</li>
+				<li><a href="#">Terms of service</a>
+				</li>
+			</ul>
+			<div class="footer-social">
+				<a href="#" target="_blank">
+					<svg class="icon icon-facebook">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite/sprite.svg#facebook">
+						</use>
+					</svg>
+				</a>
+				<a href="#" target="_blank">
+					<svg class="icon icon-twitter">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite/sprite.svg#twitter">
+						</use>
+					</svg>
+				</a>
+				<a href="#" target="_blank">
+					<svg class="icon icon-instagram">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite/sprite.svg#instagram">
+						</use>
+					</svg>
+				</a>
+				<a href="#" target="_blank">
+					<svg class="icon icon-pinterest">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite/sprite.svg#pinterest">
+						</use>
+					</svg>
+				</a>
+			</div>
+			<p class="footer-copyrights">Copyright © 2016 KenaKata. All Rights Reserved. Designed by Shuvo</p>
+		</div>
+	</footer>
+	<div class="header-back"></div>
+	<!-- jquery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- app -->
+	<script src="js/app.min.js"></script>
+	<!-- навиагация по страницам верстки / удалить на продакшене -->
+	<div id="pages-22" class="pages">
+		<div id="toogle-23" class="pages-header">
+			<p>Навигация страниц верстки</p>
+			<span>GP</span>
+			<i id="close-24" class="icon-pages"></i>
+		</div>
+		<ul>
+			<li><a href="./">Главная</a>
+			</li>
+			<li><a href="ui.html">ui</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$('#toogle-23').on('click', function(event) {
+			event.preventDefault();
+			/* Act on the event */
+			$('#pages-22').toggleClass('open');
+		});
+	</script>
+</body>
+
+</html>
