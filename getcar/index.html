@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Get Car</title>
+	<meta name="keywords" content="keywords" />
+	<meta name="description" content="description" />
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<!--viewport-->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--modernizr-->
+	<script src="js/modernizr-custom.js"></script>
+	<!--styles-->
+	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.0" />
+</head>
+
+<body class="home">
+	<!-- header -->
+	<header class="header">
+		<div class="container">
+			<button class="burger">
+				<i class="icon menu"></i>
+			</button>
+			<a href="./" class="header__logo">
+				<img src="images/logo.svg" alt="logo">
+			</a>
+			<button class="header-btn btn btn_secondary js-btn-modal" data-modal="#modal-call">Заказать звонок</button>
+			<nav class="header-nav" id="menu">
+				<div class="nav-body">
+					<ul>
+						<li><a href="#">Главная</a>
+						</li>
+						<li><a href="#about" class="scroll">О нас</a>
+						</li>
+						<li><a href="#tarif" class="scroll">Тарифы</a>
+						</li>
+						<li><a href="#advan" class="scroll">Приемущества</a>
+						</li>
+						<li><a href="#drive" class="scroll">Водитель</a>
+						</li>
+						<li><a href="#contact" class="scroll">Контакты</a>
+						</li>
+					</ul>
+					<div class="nav-bottom">
+						<p>Аренда автомобиля с водителем
+							<br><span><a href="tel:+7(895)77-88-788">+7 (895) 77-88-788</a></span>
+						</p>
+						<button class="btn btn_black" type="button">Заказать</button>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="header-back"></div>
+	</header>
+
+	<!--main-->
+	<main class="wrapper">
+		<!--first-->
+		<section class="first">
+			<div class="container">
+				<div class="first-text">
+					<h1 class="h1">Аренда автомобиля с водителем</h1>
+					<p class="first-text__tel">+7 (895) 77-88-788</p>
+					<p>Mercedes Benz E-Класс</p>
+				</div>
+				<img class="first__car" src="images/main-car.png" alt="main-car">
+			</div>
+		</section>
+
+		<!--about-->
+		<section class="about clearfix" id="about">
+			<div class="container">
+				<div class="about-left">
+					<h2 class="about-left__h2">Что мы можем предложить?</h2>
+					<p class="about-left__subtitle">Заказать автомобиль премиум класса</p>
+					<p>Мы обеспечиваем гарантированно высокий сервис и предоставляем автомобили класса Люкс. Надежность, повышенный комфорт и в тоже время приемлемые цены - основные причины, по которым мы предлагаем Вам воспользоваться услугами нашей компании. Круглосуточно
+						наши сотрудники готовы предоставить Вам качественное и современное транспортное обслуживание.</p>
+					<p class="about-left__feedback">Свяжитесь с нами</p>
+				</div>
+				<div class="about-right">
+					<form class="js-form js-form--top" action="#" method="get">
+						<div class="form__top">Оставьте <span>заявку</span>
+						</div>
+						<div class="form-body">
+							<div class="form-group">
+								<input class="form-input" type="text" name="form_name" placeholder="Ваше имя" required="required" data-msg="Введите данные корректно">
+								<hr class="form-line">
+							</div>
+							<div class="form-group">
+								<input class="form-input" type="tel" name="phone" placeholder="Ваше email или телефон" required="required" data-msg="Введите номер телефона">
+								<hr class="form-line">
+							</div>
+							<div class="form-group">
+								<textarea class="form-textarea" placeholder="Ваше сообщение"></textarea>
+								<hr class="form-line">
+							</div>
+							<button type="submit" class="btn btn_black btn_form ">Заказать</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!--tariffs-->
+		<section class="tariffs" id="tarif">
+			<div class="container">
+				<h2 class="h2"><span class="subtitle">Наши</span>Тарифы</h2>
+				<div class="tariffs-body">
+					<div class="row">
+						<div class="col-lg-4 col-sm-6">
+							<div class="tariffs-item">
+								<div class="tariffs-item-img">
+									<img src="images/car-1.png" alt="Фото машины">
+								</div>
+								<div class="tariffs-item-inner">
+									<p class="tariffs-item-inner__title">Light</p>
+									<p class="tariffs-item-inner__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+									<div class="tariffs-item-inner__price"><span class="tariffs-item-inner__price-rub">г</span> 1000/ч</div>
+									<button class="btn btn_primary js-btn-modal" data-modal="#modal-call" type="button">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="tariffs-item tariffs-item_standard">
+								<div class="tariffs-item-img">
+									<img src="images/car-2.png" alt="Фото машины">
+								</div>
+								<div class="tariffs-item-inner">
+									<p class="tariffs-item-inner__title">Standard</p>
+									<p class="tariffs-item-inner__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+									<div class="tariffs-item-inner__price"><span class="tariffs-item-inner__price-rub">г</span> 1500/ч</div>
+									<button class="btn btn_black js-btn-modal" data-modal="#modal-call" type="button">Заказать</button>
+									<div class="tariffs-item-inner-star">
+										<i class="fa fa-star fa-1.5x" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="tariffs-item">
+								<div class="tariffs-item-img">
+									<img src="images/car-3.png" alt="Фото машины">
+								</div>
+								<div class="tariffs-item-inner">
+									<p class="tariffs-item-inner__title">Premium</p>
+									<p class="tariffs-item-inner__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+									<div class="tariffs-item-inner__price"><span class="tariffs-item-inner__price-rub">г</span> 2000/ч</div>
+									<button class="btn btn_primary js-btn-modal" data-modal="#modal-call" type="button">Заказать</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--advantages-->
+		<section class="advantages" id="advan">
+			<div class="container">
+				<h2 class="h2 h2_white"><span class="subtitle">Наши</span>Приемущества</h2>
+				<div class="advantages-body">
+					<div class="row js-slider">
+						<div class="col-sm-6 col-lg-6">
+							<div class="advantages-body-item">
+								<div class="advantages-body-item_icon">
+									<i class="fa fa-black-tie fa-2x" aria-hidden="true"></i>
+								</div>
+								<div class="advantages-body-item-text">
+									<h3 class="h3">Водитель в костюме</h3>
+									<p>Мы следим за тем, как выглядят наши водители. Наши водители погрузят Ваш багаж</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-6">
+							<div class="advantages-body-item">
+								<div class="advantages-body-item_icon">
+									<i class="fa fa-hourglass-end fa-2x" aria-hidden="true"></i>
+								</div>
+								<div class="advantages-body-item-text">
+									<h3 class="h3">24/7</h3>
+									<p>Услуга предоставляется круглосуточно. Вы можете связаться с нами в любое удобное для вас время.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-6">
+							<div class="advantages-body-item">
+								<div class="advantages-body-item_icon">
+									<i class="fa fa-suitcase fa-2x" aria-hidden="true"></i>
+								</div>
+								<div class="advantages-body-item-text">
+									<h3 class="h3">Премиум класс</h3>
+									<p>Mercedes-benz e-класса для ваших бизнес встреч и комфортных передвижений.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-6">
+							<div class="advantages-body-item">
+								<div class="advantages-body-item_icon">
+									<i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+								</div>
+								<div class="advantages-body-item-text">
+									<h3 class="h3">Оплата картой</h3>
+									<p>Вы можете оплатить наши услуги, любым удобным для вас способом. К оплате принимаются электронные платежи карой VISA, Master Card.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn_secondary js-btn-modal" data-modal="#modal-call" type="button">Заказать звонок</button>
+				</div>
+			</div>
+		</section>
+		<!--driver-->
+		<section class="driver" id="drive">
+			<div class="container">
+				<h2 class="h2"><span class="subtitle">Личный</span>Водитель</h2>
+				<div class="driver-body clearfix">
+					<div class="driver-body-text">
+						<h3 class="h3 h3_black">Аренда автомобилей с водителем в компании <span>«Get Car»</span></h3>
+						<p>Каждому из нас не раз приходилось сталкиваться с ситуацией, когда срочно необходимо воспользоваться автомобилем, но самостоятельно сесть за руль просто нет возможности.</p>
+						<p>Теперь эту проблему с легкостью можно решить за считанные минуты, обратившись в компанию «Get Car». Здесь вы сможете взять в аренду авто с водителем в Москве или в Санкт-Петербурге по демократичным ценам.</p>
+						<button class="btn btn_black js-btn-modal" data-modal="#modal-call" type="button">Заказать</button>
+					</div>
+					<div class="driver-body-img">
+						<img src="images/man.jpg" alt="Фото водителя">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--form-block-->
+		<section class="form-block">
+			<div class="container">
+				<div class="form-block-body clearfix">
+					<div class="form-block-body__left">
+						<img src="images/footer-car.png">
+					</div>
+					<div class="form-block-body-right">
+						<form class="js-form js-form--bottom" action="#" method="get">
+							<div class="form__top form__top_yellow">Свяжитесь с нами</div>
+							<div class="form-body">
+								<div class="form-group">
+									<input class="form-input" type="text" name="form_name" placeholder="Ваше имя" required="required" data-msg="Введите данные корректно">
+									<hr class="form-line">
+								</div>
+								<div class="form-group">
+									<input class="form-input" type="text" name="phone" maxlength="17" placeholder="Ваш e-mail или телефон" required="required" data-msg="Введите номер телефона">
+									<hr class="form-line">
+								</div>
+								<div class="form-group">
+									<textarea class="form-textarea" placeholder="Ваше сообщение"></textarea>
+									<hr class="form-line">
+								</div>
+								<button type="submit" class="btn btn_black btn_form">Заказать</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--call-block-->
+		<section class="call-block">
+			<div class="container">
+				<p class="call-block-body__text">Вы можете звонить в любое время 24/7</p>
+				<a href="tel:78957788788">+7 (895) 77-88-788</a>
+			</div>
+		</section>
+	</main>
+	<!-- footer -->
+	<footer class="footer" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<p class="footer__title">Компания Get Car</p>
+					<div class="footer-content">
+						<p>Мы обеспечиваем гарантированно высокий сервис и предоставляем автомобили класса Люкс. Мы п редлагаем Вам воспользоваться услугами нашей компании.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p class="footer__title">Наши тарифы</p>
+					<div class="footer-content">
+						<p>У нас в наличии 3 тарифа:</p>
+						<ul>
+							<li>Light</li>
+							<li>Standart</li>
+							<li>Premium</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="footer__title">Наши контакты</div>
+					<div class="footer-content">
+						<ul class="footer-contacts">
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i>
+								Россия, г Москва, ул. Ленина, 137</li>
+							<li><i class="fa fa-mobile" aria-hidden="true"></i>
+								<a href="tel:78957788788">+7 (895) 77-88-788</a>
+							</li>
+							<li><i class="fa fa-envelope" aria-hidden="true"></i>
+								<a href="mailto:info@getcar.ru">info@getcar.ru</a>
+							</li>
+							<li><i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+								<a href="www.getcar.ru">www.getcar.ru</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>Developed by <a href="www.gp-studio.ru">gp-studio.ru</a>
+			</p>
+		</div>
+	</footer>
+	<!-- modal start -->
+	<div class="modal-wrapper js-modal" id="modal-call">
+		<div class="modal">
+			<button type="button" class="btn-close js-close-modal">
+				<i class="icon icon-close"></i>
+			</button>
+			<form class="js-form js-form--call" action="#" method="get">
+				<div class="form-body">
+					<p>Оставьте заявку</p>
+					<div class="form-group">
+						<input class="form-input" type="text" name="form_name" placeholder="Ваше имя" required="required" data-msg="Введите данные корректно">
+						<hr class="form-line">
+					</div>
+					<div class="form-group">
+						<input class="form-input" type="text" name="phone" placeholder="Ваше email или телефон" required="required" data-msg="Введите номер телефона">
+						<hr class="form-line">
+					</div>
+					<div class="form-group">
+						<textarea class="form-textarea" placeholder="Ваше сообщение"></textarea>
+						<hr class="form-line">
+					</div>
+					<button type="submit" class="btn btn_black btn_form">Заказать</button>
+				</div>
+			</form>
+		</div>
+		<div class="modal-overlay js-close-modal"></div>
+	</div>
+	<!--modal-thanks-->
+	<div class="modal-wrapper js-modal" id="modal-thanks">
+		<div class="modal">
+			<button type="button" class="btn-close js-close-modal">
+				<i class="icon icon-close"></i>
+			</button>
+			<div class="modal-body" id="body">
+				<p>Спасибо за оставленную заявку с вами свяжутся в ближайшее время</p>
+			</div>
+		</div>
+		<div class="modal-overlay js-close-modal"></div>
+	</div>
+	<!-- jquery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- app -->
+	<script src="js/app.js"></script>
+	<!-- навиагация по страницам верстки / удалить на продакшене -->
+	<div id="pages-22" class="pages">
+		<div id="toogle-23" class="pages-header">
+			<p>Навигация страниц верстки</p>
+			<span>GP</span>
+			<i id="close-24" class="icon-pages"></i>
+		</div>
+		<ul>
+			<li><a href="./">Главная</a>
+			</li>
+			<li><a href="ui.html">ui</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$('#toogle-23').on('click', function(event) {
+			event.preventDefault();
+			/* Act on the event */
+			$('#pages-22').toggleClass('open');
+		});
+	</script>
+</body>
+
+</html>

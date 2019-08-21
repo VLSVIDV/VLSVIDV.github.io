@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Get Car</title>
+	<meta name="keywords" content="keywords" />
+	<meta name="description" content="description" />
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<!--viewport-->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--modernizr-->
+	<script src="js/modernizr-custom.js"></script>
+	<!--styles-->
+	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.0" />
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header">
+		<div class="container">
+			<button class="burger">
+				<i class="icon menu"></i>
+			</button>
+			<a href="./" class="header__logo">
+				<img src="images/logo.svg" alt="logo">
+			</a>
+			<button class="header-btn btn btn_secondary js-btn-modal" data-modal="#modal-call">Заказать звонок</button>
+			<nav class="header-nav" id="menu">
+				<div class="nav-body">
+					<ul>
+						<li><a href="#">Главная</a>
+						</li>
+						<li><a href="#about" class="scroll">О нас</a>
+						</li>
+						<li><a href="#tarif" class="scroll">Тарифы</a>
+						</li>
+						<li><a href="#advan" class="scroll">Приемущества</a>
+						</li>
+						<li><a href="#drive" class="scroll">Водитель</a>
+						</li>
+						<li><a href="#contact" class="scroll">Контакты</a>
+						</li>
+					</ul>
+					<div class="nav-bottom">
+						<p>Аренда автомобиля с водителем
+							<br><span><a href="tel:+7(895)77-88-788">+7 (895) 77-88-788</a></span>
+						</p>
+						<button class="btn btn_black" type="button">Заказать</button>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="header-back"></div>
+	</header>
+
+	<main class="wrapper">
+		<div class="container">
+			<p>Colors</p>
+			<div style="background:#ffc61a;width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 6;display: inline-block;">#ffc61a</div>
+
+			<div style="background:#282525;width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 6;display: inline-block;color:white;">#282525</div>
+
+			<div style="background:#101010;width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 6;display: inline-block;color:white;">#101010</div>
+
+			<div style="background:#131313;width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 6;display: inline-block;color:white;">#131313</div>
+
+			<div style="background:#171717;width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 6;display: inline-block;color:white;">#171717</div>
+			<p>Fonts</p>
+
+			<h1 class="h1" style="text-transform: uppercase; text-align: center;">Title h1 / 35px / Proxima Nova</h1>
+			<br>
+			<h2 class="h2">Title h2 / 35px / Roboto</h2>
+			<h3 class="h3" style="text-transform: uppercase; text-align: center;">Title h3 / 25px / Roboto</h3>
+			<h4 class="h4" style="text-transform: uppercase; text-align: center;">Title h4 / 20px / Roboto</h4>
+		</div>
+		<div class="container" style=" padding: 20px;">
+			<br>
+			<btn class="btn btn_primary">Заказать</btn>
+			<btn class="btn btn_secondary">Заказать звонок</btn>
+			<btn class="btn btn_black">Заказать</btn>
+
+		</div>
+
+		<div class="container" style=" padding: 20px;">
+			<div style="width: 711px;height: 523px;background: #ffc61a; position: relative;">
+				<form class="js-form" action="#" method="get" style="margin: 0 auto; top:40px;">
+					<div class="form__top">Оставьте <span>заявку</span>
+					</div>
+					<div class="form-body">
+						<div class="form-group">
+							<input class="form-input" type="text" name="form_name" placeholder="Ваше имя" required="required">
+							<hr class="form-line">
+						</div>
+						<div class="form-group">
+							<input class="form-input" type="text" name="phone" placeholder="Ваше email или телефон" required="required">
+							<hr class="form-line">
+						</div>
+						<div class="form-group">
+							<textarea placeholder="Ваше сообщение"></textarea>
+							<hr class="form-line">
+						</div>
+						<button type="submit" class="btn btn_black btn_form">Заказать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+	<!-- footer -->
+	<footer class="footer" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<p class="footer__title">Компания Get Car</p>
+					<div class="footer-content">
+						<p>Мы обеспечиваем гарантированно высокий сервис и предоставляем автомобили класса Люкс. Мы п редлагаем Вам воспользоваться услугами нашей компании.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p class="footer__title">Наши тарифы</p>
+					<div class="footer-content">
+						<p>У нас в наличии 3 тарифа:</p>
+						<ul>
+							<li>Light</li>
+							<li>Standart</li>
+							<li>Premium</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="footer__title">Наши контакты</div>
+					<div class="footer-content">
+						<ul class="footer-contacts">
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i>
+								Россия, г Москва, ул. Ленина, 137</li>
+							<li><i class="fa fa-mobile" aria-hidden="true"></i>
+								<a href="tel:78957788788">+7 (895) 77-88-788</a>
+							</li>
+							<li><i class="fa fa-envelope" aria-hidden="true"></i>
+								<a href="mailto:info@getcar.ru">info@getcar.ru</a>
+							</li>
+							<li><i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+								<a href="www.getcar.ru">www.getcar.ru</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>Developed by <a href="www.gp-studio.ru">gp-studio.ru</a>
+			</p>
+		</div>
+	</footer>
+	<!-- jquery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- app -->
+	<script src="js/app.js"></script>
+	<!-- навиагация по страницам верстки / удалить на продакшене -->
+	<div id="pages-22" class="pages">
+		<div id="toogle-23" class="pages-header">
+			<p>Навигация страниц верстки</p>
+			<span>GP</span>
+			<i id="close-24" class="icon-pages"></i>
+		</div>
+		<ul>
+			<li><a href="./">Главная</a>
+			</li>
+			<li><a href="ui.html">ui</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$('#toogle-23').on('click', function(event) {
+			event.preventDefault();
+			/* Act on the event */
+			$('#pages-22').toggleClass('open');
+		});
+	</script>
+</body>
+
+</html>
