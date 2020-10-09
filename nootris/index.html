@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <base href="">
+    <title>Title</title>
+    <meta name="keywords" content="keywords">
+    <meta name="description" content="description">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="192x192" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#dbe6f2">
+    <meta name="theme-color" content="#ffffff"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preconnect" href="">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container"><button class="burger"><i class="menu icon"></i></button><a class="header__logo" href="./">
+          <svg class="icon icon-logo ">
+            <use xlink:href="img/sprite/sprite.svg#logo"></use>
+          </svg></a>
+        <nav class="header__nav" id="menu">
+          <ul class="header__list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Возврат</a></li>
+            <li><a href="#">Исследования</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+          </ul>
+        </nav><a class="header__phone" href="tel:+78006000990">8 (800) 600-09-90</a><a class="header__basket" href="#">
+          <svg class="icon icon-icon-basket ">
+            <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
+          </svg>
+          <p>1</p></a>
+      </div>
+    </header>
+    <main class="index">
+      <section class="first-screen">
+        <div class="container">
+          <h2 class="first-screen__tiitle">Активируй иммунитет!</h2><span>Всего пять секунд в день помогут укрепить иммунитет и повысить защитные силы организма</span>
+          <h3 class="h3">Nootris помогает
+            <p>Вашему организму во время пандемии и сезонных простуд</p>
+          </h3>
+        </div>
+      </section>
+      <section class="section-order">
+        <div class="container">
+          <h2 class="section-order__title">
+             получи защиту иммунитета<br><span>со скидкой -15% первым!</span></h2><span class="section-order__oldprice">750₽</span><span class="section-order__price">690₽</span>
+          <div class="section-order-block">
+            <div class="section-order-column"><img src="img/imbir.png">
+              <div class="section-order-block__text">
+                <p>Содержит</p><span>имбирь</span>
+              </div>
+            </div>
+            <div class="section-order-column"><img src="img/batery.png">
+              <div class="section-order-block__text section-order-block__text-big">
+                <p>+ Бесплатная доставка</p><span>Специальная цена</span>
+              </div>
+            </div>
+            <div class="section-order-column"><img src="img/virus.png">
+              <div class="section-order-block__text">
+                <p>Содержит</p><span>имбирь</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn_yellow">Оформить заказ!</button>
+        </div>
+      </section>
+    </main>
+    <div class="pages" id="pages-22">
+      <div class="pages-header" id="toogle-23">
+        <p>Навигация страниц верстки</p><span>GP</span><i class="icon-pages" id="close-24"></i>
+      </div>
+    </div>
+    <script>
+      var pages = {
+        'ГЛАВНАЯ': './',
+        'UI': 'ui.html',
+      };
+      createList(pages);
+
+            var pagesHeader = document.querySelector('#toogle-23');
+      pagesHeader.addEventListener('click', function (event) {
+        event.preventDefault();
+        document.querySelector('#pages-22').classList.toggle('open');
+      });
+
+            function createList(pages) {
+        var ulElement = document.createElement('UL');
+        for (var key in pages) {
+          var liElement = document.createElement('LI');
+          liElement.innerHTML = `<a href="${pages[key]}">${key}</a>`;
+          ulElement.appendChild(liElement);
+        }
+        document.querySelector('#pages-22').appendChild(ulElement);
+      }
+    </script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
