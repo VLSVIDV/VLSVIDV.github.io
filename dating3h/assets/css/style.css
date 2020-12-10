@@ -1,0 +1,698 @@
+/*
+ * main
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+ 
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+p {
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+img {
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+  /*font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;*/
+  font-size: 16px;
+  color: $color_white;
+  background: url("../images/bg.jpg") top center #fedae4 no-repeat;
+  overflow-x: hidden;
+ 
+}
+/*
+ * style
+ */
+.header {
+  padding: 40px 0;
+  margin: 0 0 20px;
+  background: url(../images/hook-up.jpg) no-repeat center;
+  background-size: cover;
+}
+.header__title {
+  margin: 0 0 20px;
+  font-weight: 600;
+  color: wheat;
+}
+.header__subtitle {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: wheat;
+  opacity: .8;
+}
+.chart__container {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 21px -10px rgba(0,0,0,0.2);
+          box-shadow: 0 10px 21px -10px rgba(0,0,0,0.2);
+}
+.chart__header {
+  margin: 0 0 10px;
+  padding: 10px 20px;
+}
+.chart__header p {
+  font-weight: bold;
+}
+.chart__item {
+  margin: 0 0 20px;
+}
+.chart__item:last-child {
+  margin: 0;
+}
+.chart__info {
+  padding: 15px 0;
+  background: #f8f9fb;
+  border-radius: 15px;
+}
+.chart__info--adv {
+  display: none;
+  padding: 30px 15px;
+}
+.chart__table p {
+  font-size: 15px;
+}
+.chart__table-title {
+  font-size: 86% !important;
+  color: #9e9e9e;
+  font-weight: bold;
+}
+@media (min-width: 576px) {
+  .chart__table-title {
+    font-weight: normal;
+  }
+}
+.chart__logo {
+  height: 80px;
+  border-radius: 15px 15px 0 0;
+  background: #fff;
+}
+@media (min-width: 768px) {
+  .chart__logo {
+    border-radius: 15px;
+  }
+}
+.chart__logo[data-logo="1"] {
+  background: #fff;
+}
+.chart__logo[data-logo="2"] {
+  background: #ccc;
+}
+.chart__logo[data-logo="3"] {
+  background: #fff;
+}
+.chart__logo[data-logo="4"] {
+  background: #efc3c6;
+}
+.chart__logo[data-logo="5"] {
+  background: #df3472;
+}
+.chart__logo img {
+  max-width: 80%;
+  height: calc(100% - 20px);
+}
+@media (min-width: 768px) {
+  .chart__logo img {
+    height: auto;
+  }
+  .chart__user {
+    background: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+ }
+ .chart__user--age {
+    background: none !important;
+    color: #917745 !important;
+ }
+ .chart__user--sex p {
+    font-size: 14px;
+    color: #6d6d6d;
+    padding: 0;
+    background: none !important;
+ }
+ .chart__more {
+
+    padding: 0 !important;
+    background: none !important;
+ }
+}
+
+ .chart__more {
+     border-radius: 40px;
+    padding: 10px 10px 10px 14px;
+    background: #f5deb3;
+ }
+.chart__user--sex p {
+    color: #df3472;
+    background: #fff;
+    padding: 10px;
+    border-radius:40px;
+    background: #fff;
+}
+.chart__user {
+    background: #f5deb3;
+    border-radius: 40px;
+    padding: 10px;
+    color: #fff;
+}
+
+.chart__user--age {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: auto;
+  min-height: 34px;
+  padding: 6px 14px;
+  border-radius: 25px;
+  background: #c5a870;
+  color: #fff;
+  border: 2px solid #f1d59f;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+.chart__user--age i {
+  margin: 0 5px 0 0;
+  font-size: 14px;
+}
+.chart__user--age:hover {
+  background: #ddc682;
+  text-decoration: none;
+  color: #fff;
+}
+.chart__user--age span {
+  font-size: 14px;
+}
+.chart__user--sex p {
+  font-size: 14px;
+  color: #6d6d6d;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .chart__rate {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 992px){
+  .chart__rate {
+    margin: 0;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px){
+  .chart__rate {
+    margin: 0;
+    margin-right: 70px;
+  }
+}
+
+.chart__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: #525c65;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .chart__stars {
+    margin: 0 0 10px;
+  }
+}
+.chart__stars i {
+  position: relative;
+  margin: 0 1px;
+  font-size: 14px;
+  color: #ccd6df;
+}
+.chart__stars i:after {
+  content: "\f005";
+}
+.chart__stars i:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  color: #f0c74e;
+}
+.chart__stars i[data-rate="0"]:before {
+  width: 0%;
+}
+.chart__stars i[data-rate="1"]:before {
+  width: 10%;
+}
+.chart__stars i[data-rate="2"]:before {
+  width: 20%;
+}
+.chart__stars i[data-rate="3"]:before {
+  width: 30%;
+}
+.chart__stars i[data-rate="4"]:before {
+  width: 40%;
+}
+.chart__stars i[data-rate="5"]:before {
+  width: 50%;
+}
+.chart__stars i[data-rate="6"]:before {
+  width: 60%;
+}
+.chart__stars i[data-rate="7"]:before {
+  width: 70%;
+}
+.chart__stars i[data-rate="8"]:before {
+  width: 80%;
+}
+.chart__stars i[data-rate="9"]:before {
+  width: 90%;
+}
+.chart__review .btn {
+  min-height: 34px;
+  padding: 6px 14px;
+  border-radius: 40px;
+  color: #917745;
+  border: 2px solid #f1d59f;
+}
+.chart__review .btn:hover {
+  background: #f1d59f;
+  text-decoration: none;
+  color: #fff;
+}
+.chart__review .btn:hover span {
+  color: #fff;
+}
+.chart__review .btn:hover i {
+  color: #fff;
+}
+.chart__review .btn span,
+.chart__review .btn i {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #917745 ;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.chart__review .btn.show i {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.show {
+    display: block;
+}
+.chart__review i {
+  position: relative;
+  top: 1px;
+  margin: 0 0 0 5px;
+}
+.chart__review a {
+  text-decoration: none;
+}
+.chart__review a:hover span {
+  text-decoration: underline;
+}
+.chart__review span:last-child {
+  font-size: 14px;
+  color: #6d6d6d;
+  line-height: 1.2;
+}
+.chart__payment-method .pay-item {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  background: url("../images/pay-sprite.png");
+  height: 30px;
+  width: 50px;
+  display: inline-block;
+}
+.chart__payment-method .pay-item--visa {
+  background-position: 0 0;
+}
+.chart__payment-method .pay-item--mc {
+  background-position: -65px 0;
+}
+.chart__payment-method .pay-item--pp {
+  background-position: -130px 0;
+}
+.chart__payment-method .pay-item--yandex {
+  background-position: 0 -40px;
+}
+.chart__payment-method .pay-item--wm {
+  background-position: -65px -40px;
+}
+.chart__payment-method .pay-item--rbk {
+  background-position: -130px -40px;
+}
+.chart__payment-method .pay-item--mail {
+  background-position: 0 -80px;
+}
+.chart__payment-method .pay-item--im {
+  background-position: -65px -80px;
+}
+.chart__payment-method .pay-item--qiwi {
+  background-position: -130px -80px;
+}
+.chart__payment-method .pay-item--alfabank {
+  background-position: 0 -120px;
+}
+.chart__payment-method .pay-item--americanexpress {
+  background-position: -65px -120px;
+}
+.chart__payment-method .pay-item--bitcoin {
+  background-position: -130px -120px;
+}
+.chart__payment-method .pay-item--bpay {
+  background-position: 0 -160px;
+}
+.chart__payment-method .pay-item--cirrus {
+  background-position: -65px -160px;
+}
+.chart__payment-method .pay-item--cyberplat {
+  background-position: -130px -160px;
+}
+.chart__payment-method .pay-item--dinersclub {
+  background-position: 0 -200px;
+}
+.chart__payment-method .pay-item--easypay {
+  background-position: -65px -200px;
+}
+.chart__payment-method .pay-item--e-gold {
+  background-position: -130px -200px;
+}
+.chart__payment-method .pay-item--egopay {
+  background-position: 0 -240px;
+}
+.chart__payment-method .pay-item--elecsnet {
+  background-position: -65px -240px;
+}
+.chart__payment-method .pay-item--e-port {
+  background-position: -130px -240px;
+}
+.chart__payment-method .pay-item--flattr {
+  background-position: 0 -280px;
+}
+.chart__payment-method .pay-item--handybank {
+  background-position: -65px -280px;
+}
+.chart__payment-method .pay-item--imoneyua {
+  background-position: -130px -280px;
+}
+.chart__payment-method .pay-item--jcb {
+  background-position: 0 -320px;
+}
+.chart__payment-method .pay-item--liqpay {
+  background-position: -65px -320px;
+}
+.chart__payment-method .pay-item--maestro {
+  background-position: -130px -320px;
+}
+.chart__payment-method .pay-item--russianpost {
+  background-position: 0 -360px;
+}
+.chart__payment-method .pay-item--mobi-money {
+  background-position: -65px -360px;
+}
+.chart__payment-method .pay-item--moneta {
+  background-position: -130px -360px;
+}
+.chart__payment-method .pay-item--moneymail {
+  background-position: 0 -400px;
+}
+.chart__payment-method .pay-item--neteller {
+  background-position: -65px -400px;
+}
+.chart__payment-method .pay-item--payza {
+  background-position: -130px -400px;
+}
+.chart__payment-method .pay-item--pkb {
+  background-position: 0 -440px;
+}
+.chart__payment-method .pay-item--privatbankuaua {
+  background-position: -65px -440px;
+}
+.chart__payment-method .pay-item--raiffeisen {
+  background-position: -130px -440px;
+}
+.chart__payment-method .pay-item--rapida {
+  background-position: 0 -480px;
+}
+.chart__payment-method .pay-item--rubles {
+  background-position: -65px -480px;
+}
+.chart__payment-method .pay-item--sberbank {
+  background-position: -130px -480px;
+}
+.chart__payment-method .pay-item--skrill {
+  background-position: 0 -520px;
+}
+.chart__payment-method .pay-item--sms {
+  background-position: -65px -520px;
+}
+.chart__payment-method .pay-item--solidtrustpay {
+  background-position: -130px -520px;
+}
+.chart__payment-method .pay-item--ukash {
+  background-position: 0 -560px;
+}
+.chart__payment-method .pay-item--vtb {
+  background-position: -65px -560px;
+}
+.chart__payment-method .pay-item--walletone {
+  background-position: -130px -560px;
+}
+.chart__payment-method .pay-item--z-payment {
+  background-position: 0 -600px;
+}
+.chart__payment-method .pay-item--wu {
+  background-position: -195px 0;
+}
+.chart__payment-method .pay-item--wire_transfer {
+  background-position: -195px -40px;
+}
+.chart__payment-method .pay-item--unionpay {
+  background-position: -195px -80px;
+}
+.chart__payment-method .pay-item--tenpay {
+  background-position: -195px -120px;
+}
+.chart__payment-method .pay-item--perfect_money {
+  background-position: -195px -160px;
+}
+.chart__payment-method .pay-item--payease {
+  background-position: -195px -200px;
+}
+.chart__payment-method .pay-item--prepaid_mc {
+  background-position: -195px -240px;
+}
+.chart__payment-method .pay-item--debit_card {
+  background-position: -195px -280px;
+}
+.chart__payment-method .pay-item--credit_card {
+  background-position: -195px -320px;
+}
+.chart__payment-method .pay-item--china_pnr {
+  background-position: -195px -360px;
+}
+.chart__payment-method .pay-item--checks {
+  background-position: -195px -400px;
+}
+.chart__payment-method .pay-item--alipay {
+  background-position: -195px -440px;
+}
+.chart__payment-method .pay-item--99bill {
+  background-position: -195px -480px;
+}
+.chart__payment-method .pay-item--epayments {
+  background-position: -195px -520px;
+}
+.chart__payment-method .pay-item--fatpayment {
+  background-position: -195px -560px;
+}
+.chart__payment-method .pay-item--winpay {
+  background-position: -65px -600px;
+}
+.chart__payment-method .pay-item--latvijas_pasta_banka {
+  background-position: -130px -600px;
+}
+.chart__payment-method .pay-item--payonline {
+  background-position: -195px -600px;
+}
+.chart__payment-method .pay-item--chronopay {
+  background-position: 0 -640px;
+}
+.chart__payment-method .pay-item--mir {
+  background-position: -65px -640px;
+}
+.chart__visit .btn {
+  width: 100%;
+  padding: 4px 20px;
+  border-radius: 0 0 15px 15px;
+  background: #f1d59f;
+  color: #fff;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .chart__visit .btn {
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 40px;
+  }
+}
+.chart__visit .btn:hover {
+  background: #efdc80;
+  text-decoration: none;
+  color: #fff;
+  /*border: 4px solid #ddcb83;*/
+}
+.footer {
+  padding: 40px 0;
+  margin: 20px 0 0;
+}
+
+/* MODAL */
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all;
+}
+
+.modal_visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.43);
+  position: fixed;
+}
+
+.modal__window {
+  padding: 30px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  background: #fff;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 11px;
+  border: 2px solid wheat;
+  overflow: hidden;
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+  position: fixed;
+}
+
+.hidden{
+  display: none;
+}
+
+.modal__title {
+  color: #bc9d63;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 700;
+  line-height: 0;
+}
+
+.modal__text {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color:#a3a3a3;
+}
+
+.modal__close-icon {
+  position: absolute;
+  display: flex;
+  width: 15px;
+  height: 20px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.modal__close-icon:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 15px;
+  height: 3px;
+  background: #000;
+  border-radius: 15px;
+  transform: rotate(45deg);
+}
+
+.modal__close-icon:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 15px;
+  height: 3px;
+  background: #000;
+  border-radius: 15px;
+  transform: rotate(135deg);;
+}
+
+.modal__image{
+  margin: 10px 0 20px;
+  display: flex;
+  justify-content: center;
+  background: #df3472;
+}
+
+.modal__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 37px;
+  background: #f1d59f;
+  color:#fff;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 9px;
+  transition: .3s;
+}
+
+.modal__btn:hover{
+  text-decoration: none;
+  background: #efdc80;
+  color:#fff;
+}
+
+#wrapper{
+  background: wheat;
+}
+
+
+/*
+ * reset
+ */
