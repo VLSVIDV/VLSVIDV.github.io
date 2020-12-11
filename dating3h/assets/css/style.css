@@ -41,13 +41,13 @@ body {
 .header__title {
   margin: 0 0 20px;
   font-weight: 600;
-  color: wheat;
+  color: white;
 }
 .header__subtitle {
   max-width: 680px;
   margin: 0 auto;
   font-size: 16px;
-  color: wheat;
+  color: white;
   opacity: .8;
 }
 .chart__container {
@@ -64,6 +64,7 @@ body {
 }
 .chart__header p {
   font-weight: bold;
+  color:#cf375b;
 }
 .chart__item {
   margin: 0 0 20px;
@@ -133,7 +134,7 @@ body {
  }
  .chart__user--age {
     background: none !important;
-    color: #917745 !important;
+    color: #db505d !important;
  }
  .chart__user--sex p {
     font-size: 14px;
@@ -151,17 +152,17 @@ body {
  .chart__more {
      border-radius: 40px;
     padding: 10px 10px 10px 14px;
-    background: #f5deb3;
+    background: #fadce7;
  }
 .chart__user--sex p {
-    color: #df3472;
+    color: #db505d;
     background: #fff;
     padding: 10px;
     border-radius:40px;
     background: #fff;
 }
 .chart__user {
-    background: #f5deb3;
+    background: #fadce7;
     border-radius: 40px;
     padding: 10px;
     color: #fff;
@@ -177,11 +178,18 @@ body {
   min-height: 34px;
   padding: 6px 14px;
   border-radius: 25px;
-  background: #c5a870;
+  background: #fa5b87;
   color: #fff;
-  border: 2px solid #f1d59f;
+  border: 2px solid #de6e8d;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
+  cursor: default;
+}
+
+@media screen and (max-width: 767px){
+  .chart__user--age{
+    border: none;
+  }
 }
 
 .chart__user--age i {
@@ -189,7 +197,7 @@ body {
   font-size: 14px;
 }
 .chart__user--age:hover {
-  background: #ddc682;
+  background: #fa5b87;
   text-decoration: none;
   color: #fff;
 }
@@ -198,7 +206,7 @@ body {
 }
 .chart__user--sex p {
   font-size: 14px;
-  color: #6d6d6d;
+  color: #db505d;
   line-height: 1.2;
 }
 @media (min-width: 768px) {
@@ -222,6 +230,7 @@ body {
 }
 
 .chart__stars {
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,6 +241,12 @@ body {
       flex-shrink: 0;
   color: #525c65;
   font-weight: 700;
+  color:	#D5AD6D;
+  background: -webkit-linear-gradient(transparent, transparent),
+  -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (min-width: 768px) {
   .chart__stars {
@@ -289,11 +304,11 @@ body {
   min-height: 34px;
   padding: 6px 14px;
   border-radius: 40px;
-  color: #917745;
-  border: 2px solid #f1d59f;
+  color: #db505d;
+  border: 2px solid #de6e8d;
 }
 .chart__review .btn:hover {
-  background: #f1d59f;
+  background: #f5bac6;
   text-decoration: none;
   color: #fff;
 }
@@ -307,7 +322,7 @@ body {
 .chart__review .btn i {
   font-size: 14px;
   line-height: 1.2;
-  color: #917745 ;
+  color: #db505d ;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -331,7 +346,7 @@ body {
 }
 .chart__review span:last-child {
   font-size: 14px;
-  color: #6d6d6d;
+  color: #db505d;
   line-height: 1.2;
 }
 .chart__payment-method .pay-item {
@@ -544,7 +559,7 @@ body {
   width: 100%;
   padding: 4px 20px;
   border-radius: 0 0 15px 15px;
-  background: #f1d59f;
+  background: #e00459;
   color: #fff;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
@@ -558,7 +573,7 @@ body {
   }
 }
 .chart__visit .btn:hover {
-  background: #efdc80;
+  background: #f7639c;
   text-decoration: none;
   color: #fff;
   /*border: 4px solid #ddcb83;*/
@@ -591,7 +606,7 @@ body {
 }
 
 .modal__window {
-  padding: 30px 20px 20px;
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -602,7 +617,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 11px;
-  border: 2px solid wheat;
+  border: 2px solid #fa5b87;
   overflow: hidden;
   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
   position: fixed;
@@ -613,7 +628,7 @@ body {
 }
 
 .modal__title {
-  color: #bc9d63;
+  color: #fd2c64;
   padding: 10px 0;
   text-align: center;
   font-weight: 700;
@@ -674,7 +689,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 37px;
-  background: #f1d59f;
+  background: #e00459;
   color:#fff;
   width: 100%;
   max-width: 300px;
@@ -684,12 +699,12 @@ body {
 
 .modal__btn:hover{
   text-decoration: none;
-  background: #efdc80;
+  background: #f7639c;
   color:#fff;
 }
 
 #wrapper{
-  background: wheat;
+  background: #ffebf2;
 }
 
 
