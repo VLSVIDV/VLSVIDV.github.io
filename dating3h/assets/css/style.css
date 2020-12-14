@@ -42,15 +42,7 @@ body {
   margin: 0 auto 20px;
   font-weight: 600;
   color: white;
-  border: 3px solid #fff;
-  width: auto;
-  padding: 10px;
-}
 
-@media screen and (min-width: 768px){
-  .header__title{
-    width: max-content;
-  }
 }
 
 .header__subtitle {
@@ -59,7 +51,17 @@ body {
   font-size: 16px;
   color: white;
   opacity: .8;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  padding: 10px;
 }
+
+@media screen and (min-width: 768px){
+  .header__subtitle{
+    width: max-content;
+  }
+}
+
 .chart__container {
   width: 100%;
   padding: 10px;
