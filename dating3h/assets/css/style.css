@@ -32,14 +32,39 @@ body {
 /*
  * style
  */
+
 .header {
   padding: 40px 0;
   margin: 0 0 20px;
-  background: url(../images/hook-up.jpg) no-repeat center;
+  min-height: 500px;
+  background: url(../images/bg-lady.jpg) no-repeat;
   background-size: cover;
+  background-position: 100% 14%;
 }
+
+.header > .container{
+  min-height: 444px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+  .header{
+    min-height: 300px;
+  }
+
+  .header > .container{
+    min-height: 300px;
+    align-items: center;
+  }
+
+  .header__title{
+    text-align: center !important;
+  }
+}
+
 .header__title {
-  margin: 0 auto 20px;
   font-weight: 600;
   color: white;
 
@@ -47,11 +72,10 @@ body {
 
 .header__subtitle {
   max-width: 680px;
-  margin: 0 auto;
-  font-size: 16px;
+  font-size: 25px;
   color: white;
   opacity: .8;
-  border: 3px solid #fff;
+  /*border: 3px solid #fff;*/
   border-radius: 15px;
   padding: 10px;
 }

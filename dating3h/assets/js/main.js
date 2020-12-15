@@ -33,16 +33,16 @@ $(document).ready(function() {
   //LEAVE WINDOW FUNC
 
 
-  var isLeavePopup = jQuery('.exit-popup');
-  if (isLeavePopup) {
-    jQuery('html').mouseleave(function(event) {
-      isLeavePopup.removeClass('hidden');
-      jQuery('.exit-popup-overflow').removeClass('hidden');
-    });
-    jQuery('.modal__close-icon').click(function() {
-      isLeavePopup.addClass('hidden');
-      jQuery('.exit-popup-overflow').addClass('hidden');
-    });
-  }
+  // var isLeavePopup = jQuery('.exit-popup');
+  // if (isLeavePopup) {
+  //   jQuery('html').mouseleave(function(event) {
+  //     isLeavePopup.removeClass('hidden');
+  //     jQuery('.exit-popup-overflow').removeClass('hidden');
+  //   });
+  //   jQuery('.modal__close-icon').click(function() {
+  //     isLeavePopup.addClass('hidden');
+  //     jQuery('.exit-popup-overflow').addClass('hidden');
+  //   });
+  // }
 
 });
